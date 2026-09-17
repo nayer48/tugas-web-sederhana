@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/Logo.png">
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <img src="Assets/Logo.png" alt="Logo KIREI MomentSs" width="80">
+            <h1>KIREI MomentSs</h1>
+        </header>
+    
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html" class="active">Reservasi</a>
+        </nav>
+
+    </div>
+
+    <main>
+        <section class="order">
+            <form action="#" method="post">
+                <h2>Reservation Form</h2>
+                <fieldset>
+                    <legend>Data Diri</legend>
+                    <label for="nama">Nama Lengkap</label><br>
+                    <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Lengkap Anda" required><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Masukkan Email Anda" required><br>
+                    <label for="telepon">Nomor Telepon</label><br>
+                    <input type="number" name="telepon" id="telepon" placeholder="Masukkan Nomor Telepon Anda"
+                        required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detail Reservasi</legend>
+                    <label for="tanggal">Tanggal Reservasi</label><br>
+                    <input type="date" name="tanggal" id="tanggal" required><br>
+                    <label for="jam">Jam Kedatangan</label><br>
+                    <input type="time" name="jam" id="jam" required><br>
+                    <label for="jumlah">Jumlah Tamu</label><br>
+                    <input type="number" name="jumlah" id="jumlah" placeholder="Contoh: 2" required><br>
+                    <label for="tempat">Jenis Tempat</label><br>
+                    <select name="tempat" id="tempat">
+                        <option value="indoor">Indoor</option>
+                        <option value="outdoor">Outdoor</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Catatan Tambahan</legend>
+                    <label for="catatan">Permintaan Khusus (Opsional)</label><br>
+                    <textarea name="catatan" id="catatan" rows="4" cols="50"
+                        placeholder="Contoh: alergi makanan, kursi bayi, dsb"></textarea><br>
+                    <input type="checkbox" name="cek" id="cek">
+                    <label for="cek">Data yang saya isikan sudah benar</label><br><br>
+                </fieldset><br>
+
+                <input type="submit" value="Kirim" onclick="alert('Reservasi Berhasil')">
+                <input type="reset" value="Reset" onclick="alert('Reservasi Akan Di Riset')">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h4>Hubungi Kami</h4>
+        <a href="https://www.instagram.com" target="_blank"><img src="Assets/logo ig.png" alt="Instagram"></a>
+        <a href="https://www.whatsapp.com" target="_blank"><img src="Assets/logo whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://www.tiktok.com" target="_blank"><img src="Assets/logo tiktok.png" alt="TikTok"></a>
+        <a href="mailto:niarputri157@gmail.com" target="_blank"><img src="Assets/logo email.png" alt="Email"></a>
+
+        <p>&copy;2026 KIREI MomentSs. Hanya Untuk Tugas Pelatihan</p>
+    </footer>
+</body>
+
+</html>
